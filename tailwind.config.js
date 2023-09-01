@@ -1,0 +1,63 @@
+module.exports = {
+  purge: ["./src/**/*.html", "./src/**/*.js", "./src/**/*.jsx"],
+  theme: {
+    fontFamily: {
+      sans: [
+        `Montserrat`,
+        `system-ui`,
+        `-apple-system`,
+        `BlinkMacSystemFont`,
+        `"Segoe UI"`,
+        `Roboto`,
+        `"Helvetica Neue"`,
+        `Arial`,
+        `"Noto Sans"`,
+        `sans-serif`,
+        `"Apple Color Emoji"`,
+        `"Segoe UI Emoji"`,
+        `"Segoe UI Symbol"`,
+        `"Noto Color Emoji"`,
+      ],
+    },
+    fontSize: {
+      xs: ".75rem",
+      sm: ".875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "3nHalfxl": "2rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+      "6xl": "4rem",
+      "7xl": "4.5rem",
+    },
+    borderRadius: {
+      none: "0",
+      sm: "0.125rem",
+      default: "0.25rem",
+      md: "0.375rem",
+      lg: "0.5rem",
+      xl: "0.75rem",
+      xxl: "1rem",
+      full: "9999px",
+    },
+    extend: {
+      colors: {
+        "gray-blue": {
+          "very-light": "#F6F6FE",
+          light: "#B3B5C6",
+          default: "#6D708D",
+          dark: "#494C5F",
+        },
+        highlight: "#696fdd",
+      },
+    },
+  },
+  variants: {
+    borderWidth: ["responsive", "hover", "focus"],
+    margin: ["responsive", "last", "first"],
+  },
+  plugins: [],
+};
