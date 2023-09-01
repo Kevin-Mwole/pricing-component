@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+:root {
+  font-size: 15px;
+}
+
+.bg-gradient-right {
+  background-image: linear-gradient(to right, #a3adf0, #696fdd);
+  background-color: transparent;
+}
+
+.bg-gradient-bottom-right {
+  background-image: linear-gradient(to bottom right, #a3adf0, #696fdd);
+}
+
+@responsive {
+  .bg-pattern-top {
+    background: no-repeat top right url(./../images/bg-top.svg);
+    background-color: theme("colors.gray-blue.very-light");
+  }
+
+  .bg-pattern-both {
+    background: no-repeat top right url(./../images/bg-top.svg),
+      no-repeat bottom left url(./../images/bg-bottom.svg);
+    background-color: theme("colors.gray-blue.very-light");
+  }
+}
+
+@variants hover, focus {
+  .bg-none {
+    background-image: none;
+    background: none;
+  }
+
+  .bg-gradient-none {
+    background-image: none;
+  }
+}
